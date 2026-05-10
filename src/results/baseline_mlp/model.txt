@@ -1,0 +1,73 @@
+{
+    "model_name": "BaselineMLP",
+    "model_summary": "BaselineMLP(\n  (lin_0): Linear(in_features=784, out_features=256, bias=True)\n  (act_0): ReLU()\n  (lin_1): Linear(in_features=256, out_features=128, bias=True)\n  (act_1): ReLU()\n  (lin_2): Linear(in_features=128, out_features=10, bias=True)\n)",
+    "model_modules": [
+        {
+            "name": "lin_0",
+            "module": "Linear(in_features=784, out_features=256, bias=True)"
+        },
+        {
+            "name": "act_0",
+            "module": "ReLU()"
+        },
+        {
+            "name": "lin_1",
+            "module": "Linear(in_features=256, out_features=128, bias=True)"
+        },
+        {
+            "name": "act_1",
+            "module": "ReLU()"
+        },
+        {
+            "name": "lin_2",
+            "module": "Linear(in_features=128, out_features=10, bias=True)"
+        }
+    ],
+    "model_parameters": [
+        {
+            "name": "lin_0.weight",
+            "parameters_count": 200704,
+            "parameters_shape": [
+                256,
+                784
+            ]
+        },
+        {
+            "name": "lin_0.bias",
+            "parameters_count": 256,
+            "parameters_shape": [
+                256
+            ]
+        },
+        {
+            "name": "lin_1.weight",
+            "parameters_count": 32768,
+            "parameters_shape": [
+                128,
+                256
+            ]
+        },
+        {
+            "name": "lin_1.bias",
+            "parameters_count": 128,
+            "parameters_shape": [
+                128
+            ]
+        },
+        {
+            "name": "lin_2.weight",
+            "parameters_count": 1280,
+            "parameters_shape": [
+                10,
+                128
+            ]
+        },
+        {
+            "name": "lin_2.bias",
+            "parameters_count": 10,
+            "parameters_shape": [
+                10
+            ]
+        }
+    ]
+}

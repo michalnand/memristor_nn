@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+src/data/MNIST/*
+
+*drawio.bkp
+
+.DS_Store
+*.DS_Store

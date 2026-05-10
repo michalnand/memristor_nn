@@ -1,0 +1,151 @@
+{
+    "model_name": "MemristorMLPNorm",
+    "model_summary": "MemristorMLPNorm(\n  (lin_0): MemristorLinear()\n  (norm_0): LayerNorm((256,), eps=1e-05, elementwise_affine=True)\n  (act_0): ReLU()\n  (lin_1): MemristorLinear()\n  (norm_1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)\n  (act_1): ReLU()\n  (lin_2): MemristorLinear()\n  (norm_2): LayerNorm((10,), eps=1e-05, elementwise_affine=True)\n)",
+    "model_modules": [
+        {
+            "name": "lin_0",
+            "module": "MemristorLinear()"
+        },
+        {
+            "name": "norm_0",
+            "module": "LayerNorm((256,), eps=1e-05, elementwise_affine=True)"
+        },
+        {
+            "name": "act_0",
+            "module": "ReLU()"
+        },
+        {
+            "name": "lin_1",
+            "module": "MemristorLinear()"
+        },
+        {
+            "name": "norm_1",
+            "module": "LayerNorm((128,), eps=1e-05, elementwise_affine=True)"
+        },
+        {
+            "name": "act_1",
+            "module": "ReLU()"
+        },
+        {
+            "name": "lin_2",
+            "module": "MemristorLinear()"
+        },
+        {
+            "name": "norm_2",
+            "module": "LayerNorm((10,), eps=1e-05, elementwise_affine=True)"
+        }
+    ],
+    "model_parameters": [
+        {
+            "name": "lin_0.p_pos",
+            "parameters_count": 200704,
+            "parameters_shape": [
+                256,
+                784
+            ]
+        },
+        {
+            "name": "lin_0.p_neg",
+            "parameters_count": 200704,
+            "parameters_shape": [
+                256,
+                784
+            ]
+        },
+        {
+            "name": "lin_0.bias",
+            "parameters_count": 256,
+            "parameters_shape": [
+                256
+            ]
+        },
+        {
+            "name": "norm_0.weight",
+            "parameters_count": 256,
+            "parameters_shape": [
+                256
+            ]
+        },
+        {
+            "name": "norm_0.bias",
+            "parameters_count": 256,
+            "parameters_shape": [
+                256
+            ]
+        },
+        {
+            "name": "lin_1.p_pos",
+            "parameters_count": 32768,
+            "parameters_shape": [
+                128,
+                256
+            ]
+        },
+        {
+            "name": "lin_1.p_neg",
+            "parameters_count": 32768,
+            "parameters_shape": [
+                128,
+                256
+            ]
+        },
+        {
+            "name": "lin_1.bias",
+            "parameters_count": 128,
+            "parameters_shape": [
+                128
+            ]
+        },
+        {
+            "name": "norm_1.weight",
+            "parameters_count": 128,
+            "parameters_shape": [
+                128
+            ]
+        },
+        {
+            "name": "norm_1.bias",
+            "parameters_count": 128,
+            "parameters_shape": [
+                128
+            ]
+        },
+        {
+            "name": "lin_2.p_pos",
+            "parameters_count": 1280,
+            "parameters_shape": [
+                10,
+                128
+            ]
+        },
+        {
+            "name": "lin_2.p_neg",
+            "parameters_count": 1280,
+            "parameters_shape": [
+                10,
+                128
+            ]
+        },
+        {
+            "name": "lin_2.bias",
+            "parameters_count": 10,
+            "parameters_shape": [
+                10
+            ]
+        },
+        {
+            "name": "norm_2.weight",
+            "parameters_count": 10,
+            "parameters_shape": [
+                10
+            ]
+        },
+        {
+            "name": "norm_2.bias",
+            "parameters_count": 10,
+            "parameters_shape": [
+                10
+            ]
+        }
+    ]
+}

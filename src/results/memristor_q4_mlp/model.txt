@@ -1,0 +1,97 @@
+{
+    "model_name": "MemristorMLP",
+    "model_summary": "MemristorMLP(\n  (lin_0): MemristorLinear()\n  (act_0): ReLU()\n  (lin_1): MemristorLinear()\n  (act_1): ReLU()\n  (lin_2): MemristorLinear()\n)",
+    "model_modules": [
+        {
+            "name": "lin_0",
+            "module": "MemristorLinear()"
+        },
+        {
+            "name": "act_0",
+            "module": "ReLU()"
+        },
+        {
+            "name": "lin_1",
+            "module": "MemristorLinear()"
+        },
+        {
+            "name": "act_1",
+            "module": "ReLU()"
+        },
+        {
+            "name": "lin_2",
+            "module": "MemristorLinear()"
+        }
+    ],
+    "model_parameters": [
+        {
+            "name": "lin_0.p_pos",
+            "parameters_count": 200704,
+            "parameters_shape": [
+                256,
+                784
+            ]
+        },
+        {
+            "name": "lin_0.p_neg",
+            "parameters_count": 200704,
+            "parameters_shape": [
+                256,
+                784
+            ]
+        },
+        {
+            "name": "lin_0.bias",
+            "parameters_count": 256,
+            "parameters_shape": [
+                256
+            ]
+        },
+        {
+            "name": "lin_1.p_pos",
+            "parameters_count": 32768,
+            "parameters_shape": [
+                128,
+                256
+            ]
+        },
+        {
+            "name": "lin_1.p_neg",
+            "parameters_count": 32768,
+            "parameters_shape": [
+                128,
+                256
+            ]
+        },
+        {
+            "name": "lin_1.bias",
+            "parameters_count": 128,
+            "parameters_shape": [
+                128
+            ]
+        },
+        {
+            "name": "lin_2.p_pos",
+            "parameters_count": 1280,
+            "parameters_shape": [
+                10,
+                128
+            ]
+        },
+        {
+            "name": "lin_2.p_neg",
+            "parameters_count": 1280,
+            "parameters_shape": [
+                10,
+                128
+            ]
+        },
+        {
+            "name": "lin_2.bias",
+            "parameters_count": 10,
+            "parameters_shape": [
+                10
+            ]
+        }
+    ]
+}
