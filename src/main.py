@@ -11,7 +11,7 @@ if __name__ == "__main__":
     dataset_train = DatasetMnist(train=True)
     dataset_test  = DatasetMnist(train=False)
 
-    '''
+    
     # baseline FP32 train    
     hyperparameters = {}
     hyperparameters["num_epochs"]       = 20
@@ -24,9 +24,9 @@ if __name__ == "__main__":
     pipeline = SupervisedPipeline(dataset_train, dataset_test, BaselineMLP, hyperparameters, device="cpu")
 
     pipeline.run_training()
-    '''
     
-    '''
+    
+    
     # memristor model, 4bit quantization
     hyperparameters = {}
     hyperparameters["num_epochs"]       = 20
@@ -39,7 +39,7 @@ if __name__ == "__main__":
     pipeline = SupervisedPipeline(dataset_train, dataset_test, MemristorMLP, hyperparameters, device="cpu")
     
     pipeline.run_training()
-    '''
+    
 
 
     # memristor model, 4bit quantization, layer norm

@@ -47,8 +47,9 @@ class EvaluateExperiment:
         result_txt_md+= "\n\n\n"
 
         result_txt_md+= "## Quantization scheme\n\n"
-        img_path = "./diagrams/diagrams_quantization_"+ self.model_info["model_name"]
+        img_path = "../diagrams/diagrams-quantization_"+ self.model_info["model_name"] + ".png"
         result_txt_md+= "![plot](" + img_path + ")" + "\n\n"
+
 
         result_txt_md+= "## Result plots\n\n"
         img_path = "../../src/"+ self.path + "/plots/accuracy.png"
